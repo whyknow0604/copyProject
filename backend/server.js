@@ -22,18 +22,25 @@ app.post('/login',function(req,res){
 		return id === v.username;
 	});
 	
-	if(idcheck.length > 0){
+	if( idcheck.length > 0){
 		if (idcheck[0].userpass===pass){
 			res.json({success:1, message: 'login success'});
 		}else{
-			res.json({error:-1, message: 'no match password'});
+			res.json({error : -1, message: 'no match password'});
 		}
 	}else{
-		
-		res.json({success:2, message: 'success??'});
+		res.json({success:2, message: 'go to register'});
 	}
 		
 });
+
+
+const companyList = require('./data');
+
+app.get('/company',function(req,res){
+	res.json(companyList);
+})
+
 
 const server = app.listen(4000);
 

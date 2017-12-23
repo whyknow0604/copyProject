@@ -10,7 +10,7 @@ class App extends React.Component {
             <Router>
 				<div className="container">
 					<Switch>
-						<Route Path="/login" component={Login}></Route>
+						<Route path="/login" component={Login}></Route>
 						<Route path="/company" component={Company}></Route>
 						<Route path="/company/:id"></Route>
 					</Switch>

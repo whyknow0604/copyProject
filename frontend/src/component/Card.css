@@ -1,0 +1,63 @@
+*{
+	margin: 0;padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1000px;
+	margin: 30px auto;
+}
+
+.card {
+	float: left;
+	width: 240px;
+	margin: 5px;
+	border: 1px solid #ddd;
+}
+.thums{
+	position: relative;
+}
+.thums .img{
+	height: 185px;
+	background-color: #ddd;
+	
+}
+.thums .icon{
+	position: absolute;
+	left: 15px; bottom: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: antiquewhite;
+}
+
+.info{
+	border-top: 1px solid #ddd; border-bottom: 1px solid #ccc;
+	padding: 15px;
+}
+.info h3{
+	font-size:18px;
+}
+.info span{
+	color: #999;
+}
+.info .money{
+	
+}
+
+.good{
+	height: 40px;
+	line-height: 30px; padding: 0 15px;
+}
+.good .recom{
+	float: left;
+}
+.good .favorite{
+	float: right;
+	width: 16px; height: 16px;
+	border-radius: 50%;
+	margin: 11px 0;
+	border: 1px solid #ddd;
+}
+.good .favorite.active{
+	background-color: red;
+}
